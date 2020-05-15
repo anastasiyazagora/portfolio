@@ -9,7 +9,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    color: #393f47;
+    color: #000;
     font-family: 'M PLUS 1p', sans-serif;
     // font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -18,6 +18,19 @@ body {
     @media(min-width: 1200px) {
         font-style: 24px;
     }
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+#overlay.active {
+    display: block;
 }
 a,
 a:hover {
