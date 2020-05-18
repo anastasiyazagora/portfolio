@@ -194,7 +194,7 @@ header {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 40px;
+  padding-left: 19px;
   padding-top: 80px;
   max-width: 400px;
   width: 100%;
@@ -207,6 +207,11 @@ header {
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .header-menu {
+    padding-left: 40px;
+  }
 }
 @media (min-width: 1200px) {
   .header-menu {
@@ -242,7 +247,7 @@ header {
   font-size: 20px;
   border-bottom: 1px solid;
   width: 72px;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
   line-height: 22px;
 }
 .header-menu__item:first-child {
@@ -251,6 +256,7 @@ header {
 }
 .header-menu__item:nth-child(3) {
   width: 95px;
+  margin-bottom: 45px;
 }
 @media (min-width: 768px) {
   .header-menu__item {
@@ -780,10 +786,10 @@ header {
   }
 }
 .sotial-links-block__item {
-  margin-right: 29px;
+  margin-right: 21px;
 }
 .sotial-links-block__item:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 @media (min-width: 768px) {
   .sotial-links-block__item {
@@ -796,8 +802,7 @@ header {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin-bottom: 38px;
 }
 @media (min-width: 768px) {
   .sotial-links-block {
@@ -814,12 +819,12 @@ header {
   font-size: 18px;
   max-width: 196px;
   border-bottom: 1px solid;
+  color: #039be5;
 }
 @media (min-width: 768px) {
   .contacts-header-mail {
     max-width: 218px;
     font-size: 20px;
-    color: #039be5;
   }
 }
 @media (min-width: 1200px) {
