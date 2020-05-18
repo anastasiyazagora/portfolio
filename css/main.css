@@ -146,8 +146,8 @@ header {
   .header-nav {
     max-width: 1400px;
     margin-bottom: 160px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: 1430px) {
@@ -180,7 +180,7 @@ header {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
@@ -238,25 +238,34 @@ header {
 }
 .header-menu__item {
   color: #000;
+  font-weight: bold;
+  font-size: 20px;
   border-bottom: 1px solid;
   width: 72px;
   margin-bottom: 36px;
   line-height: 22px;
 }
+.header-menu__item:first-child {
+  padding-top: 39px;
+  width: 81px;
+}
+.header-menu__item:nth-child(3) {
+  width: 95px;
+}
 @media (min-width: 768px) {
   .header-menu__item {
-    padding-top: 29px;
+    padding: 0;
     margin: 0;
-    width: 75px;
-    font-size: 20px;
-    font-weight: bold;
+    width: 78px;
+    margin-bottom: 30px;
   }
   .header-menu__item:first-child {
     width: 81px;
-    padding-top: 39px;
+    padding-top: 35px;
   }
-  .header-menu__item:last-child {
+  .header-menu__item:nth-child(3) {
     width: 95px;
+    margin-bottom: 46px;
   }
 }
 @media (min-width: 1200px) {
@@ -269,6 +278,7 @@ header {
     color: #000000;
     margin-right: 75px;
     margin-bottom: 0;
+    border: none;
   }
 }
 .header-menu__item:last-child {
@@ -377,7 +387,7 @@ header {
   bottom: -10px;
 }
 .toggle-menu.active span {
-  background-color: #FFF;
+  background-color: #fff;
 }
 .toggle-menu.active span::before {
   -webkit-transform: rotate(45deg);
@@ -764,11 +774,6 @@ header {
   height: 50px;
   width: 50px;
 }
-@media (min-width: 768px) {
-  .sotial-links-block__item img {
-    margin-right: 6px;
-  }
-}
 @media (min-width: 1200px) {
   .sotial-links-block__item img {
     margin-right: 13px;
@@ -792,10 +797,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 @media (min-width: 768px) {
   .sotial-links-block {
-    margin-bottom: 20px;
+    margin-bottom: 29px;
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -812,12 +819,30 @@ header {
   .contacts-header-mail {
     max-width: 218px;
     font-size: 20px;
+    color: #039be5;
   }
 }
 @media (min-width: 1200px) {
   .contacts-header-mail {
+    color: #000;
     max-width: 260px;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: bold;
   }
+}
+.mobile-menu-contacts,
+.mobile-logo {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .mobile-menu-contacts,
+  .mobile-logo {
+    display: none;
+  }
+}
+.mobile-logo {
+  position: absolute;
+  top: 29px;
+  left: 19px;
 }
 /*# sourceMappingURL=main.css.map */
