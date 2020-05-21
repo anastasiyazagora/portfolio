@@ -1027,8 +1027,12 @@ header {
     margin-bottom: 45px;
   }
 }
+.section-portfolio-links button {
+  border: none;
+  background-color: #fff;
+}
 @media (min-width: 768px) {
-  .section-portfolio-links li {
+  .section-portfolio-links button {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1041,15 +1045,16 @@ header {
             justify-content: flex-start;
     margin-right: 45px;
   }
-  .section-portfolio-links li:last-child {
+  .section-portfolio-links button:last-child {
     margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
-  .section-portfolio-links li {
+  .section-portfolio-links button {
+    background-color: #f4f8f9;
     margin-right: 75px;
   }
-  .section-portfolio-links li:last-child {
+  .section-portfolio-links button:last-child {
     margin-right: 0;
   }
 }

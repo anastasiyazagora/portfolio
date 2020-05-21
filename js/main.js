@@ -18,4 +18,13 @@ $(document).ready(function () {
         overlay.classList.remove('active');
         bodyEl.classList.remove('active');
     })
+
+    let containerEl = document.querySelector('#portfolio-projects');
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+        }
+    })
+
+    
 })
