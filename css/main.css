@@ -105,13 +105,22 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 100px;
   background-image: url(../img/header/line-1.jpg);
   -moz-background-size: contain;
        background-size: contain;
   background-position: 0 0;
   background-repeat: repeat;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding-bottom: 100px;
+  }
 }
 .header-nav {
   max-width: 265px;
@@ -703,7 +712,7 @@ header {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    margin-bottom: 85px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -713,7 +722,7 @@ header {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 240px;
+    margin-bottom: 137px;
   }
 }
 .title-3 {
@@ -730,6 +739,8 @@ header {
 }
 @media (min-width: 1200px) {
   .title-3 {
+    padding-top: 60px;
+    margin-top: -60px;
     font-size: 37px;
     margin-bottom: 30px;
   }
@@ -1086,7 +1097,7 @@ header {
     font-weight: 800;
   }
 }
-.wrapper-big-card {
+.portfolio-projects-card-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1101,7 +1112,7 @@ header {
           flex-direction: column;
 }
 @media (min-width: 768px) {
-  .wrapper-big-card {
+  .portfolio-projects-card-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1114,23 +1125,40 @@ header {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-@media (min-width: 768px) {
-  .first-big-card,
-  .second-big-card {
-    max-width: 340px;
-  }
-}
-@media (min-width: 992px) {
-  .first-big-card,
-  .second-big-card {
-    max-width: 450px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 @media (min-width: 1200px) {
-  .first-big-card,
-  .second-big-card {
+  .portfolio-projects-card-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.portfolio-projects-card {
+  max-width: 555px;
+}
+@media (min-width: 768px) {
+  .portfolio-projects-card {
+    max-width: 340px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-projects-card {
     max-width: 555px;
   }
 }
@@ -1148,6 +1176,7 @@ header {
 @media (min-width: 1200px) {
   .title-4 {
     font-size: 32px;
+    border-bottom: 1.5px solid transparent;
   }
   .title-4:hover {
     border-bottom: 1.5px solid #ed574f;
@@ -1169,11 +1198,6 @@ header {
   .title-5 {
     font-size: 26px;
     margin: 0;
-  }
-}
-@media (min-width: 1200px) {
-  .little-card-item .portfolio-card-desk p {
-    font-size: 20px;
   }
 }
 .portfolio-card-desk {
@@ -1204,82 +1228,6 @@ header {
 @media (min-width: 1200px) {
   .section-portfolio p {
     font-size: 22px;
-  }
-}
-.wrapper-little-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media (min-width: 576px) {
-  .wrapper-little-card {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  .wrapper-little-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-       -moz-box-orient: horizontal;
-       -moz-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-@media (min-width: 900px) {
-  .wrapper-little-card {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-  }
-}
-@media (min-width: 1200px) {
-  .wrapper-little-card {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-.little-card-item {
-  max-width: 340px;
-}
-@media (min-width: 1200px) {
-  .little-card-item {
-    max-width: 360px;
-  }
-}
-.hide-card {
-  display: block;
-}
-@media (min-width: 768px) {
-  .hide-card {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .hide-card {
-    display: block;
   }
 }
 .see-all-works a {

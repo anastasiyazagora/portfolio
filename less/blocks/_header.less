@@ -3,12 +3,18 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 100px;
+  
   background-image: url(../img/header/line-1.jpg);
   background-size: contain;
   background-position: 0 0;
   background-repeat: repeat;
   overflow: hidden;
+  @media(min-width:768px) {
+    padding-bottom: 44px;
+  }
+  @media(min-width:1200px ) {
+    padding-bottom: 100px;
+  }
 }
 .header-nav {
   max-width: 265px;
@@ -401,11 +407,11 @@ header {
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 85px;
+    margin-bottom: 10px;
   }
   @media (min-width: 1200px) {
     justify-content: space-between;
-    margin-bottom: 240px;
+    margin-bottom: 137px;
   }
 }
 .title-3 {
@@ -418,6 +424,8 @@ header {
     margin-bottom: 23px;
   }
   @media (min-width: 1200px) {
+    padding-top: 60px;
+    margin-top: -60px;
     font-size: 37px;
     margin-bottom: 30px;
   }

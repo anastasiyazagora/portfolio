@@ -92,26 +92,28 @@
         }
     }
 }
-.wrapper-big-card {
+.portfolio-projects-card-wrapper {
     display: flex;
     flex-direction: column;
     @media(min-width: 768px) {
+        
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
+      
     }
     @media(min-width:1200px ) {
-        
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
-.first-big-card, .second-big-card {
-    @media(min-width: 768px) {
+.portfolio-projects-card {
+    max-width: 555px;
+    @media(min-width:768px) {
     max-width: 340px;
     }
-    @media(min-width: 992px) {
-        max-width: 450px;
-    }
     @media(min-width:1200px ) {
-      
         max-width: 555px;
     }
 }
@@ -124,13 +126,14 @@
         font-size: 24px;
     }
     @media(min-width:1200px ) {
-       font-size: 32px; 
-       &:hover {
-            border-bottom: 1.5px solid #ed574f;
-       }
-        
+        font-size: 32px; 
+        border-bottom: 1.5px solid transparent;
+        &:hover {
+        border-bottom: 1.5px solid #ed574f;
+        }
     }
 }
+
 .title-5 {
     display: inline-block;
     font-size: 22px;
@@ -146,16 +149,7 @@
        margin: 0;
     }
 }
-.little-card-item .portfolio-card-desk p {
 
-    @media(min-width:768px) {
-    
-    }
-    @media(min-width:1200px ) {
-    font-size: 20px;
-    }  
-
-}
 .portfolio-card-desk {
     margin-top: 27px;
     margin-bottom: 40px;
@@ -179,44 +173,7 @@
         font-size: 22px;  
     }
 }
-.wrapper-little-card {
-    display: flex;
-    flex-direction: column;
-    @media(min-width:576px) {
-        align-items: center;
-    }
-    @media(min-width:768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    }
-    @media(min-width:900px) {
-        justify-content: space-around;
-    }
-    @media(min-width:1200px ) {
-        justify-content: space-between; 
-    }
-}
-.little-card-item {
-    max-width: 340px;
-    @media(min-width:768px) {
-        
-    }
-    @media(min-width: 992px) {
-        
-    }
-    @media(min-width:1200px ) {
-        max-width: 360px;
-    }
-}
-.hide-card {
-    display: block;
-    @media(min-width:768px) {
-    display: none;
-    }
-    @media(min-width:1200px ) {
-    display: block;
-    }
-}
+
 .see-all-works a {
     font-size: 20px;
     font-weight: 400;
@@ -285,14 +242,5 @@
     }
     @media(min-width:1200px ) {
         
-    }
-}
-.little-card-item .portfolio-card-desk {
-    
-    @media(min-width:768px) {
-    
-    }
-    @media(min-width:1200px ) {
-    
     }
 }
