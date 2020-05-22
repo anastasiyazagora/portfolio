@@ -717,6 +717,8 @@ header {
 }
 @media (min-width: 1200px) {
   .wrapper-skills-contacts {
+    padding-top: 70px;
+    margin-top: -70px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
        -moz-box-pack: justify;
@@ -739,8 +741,6 @@ header {
 }
 @media (min-width: 1200px) {
   .title-3 {
-    padding-top: 60px;
-    margin-top: -60px;
     font-size: 37px;
     margin-bottom: 30px;
   }
