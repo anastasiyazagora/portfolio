@@ -37,6 +37,26 @@
         bottom: 17px;
     }
 }
+.line-bottom-name--title-6 {
+    position: relative;
+ 
+}
+
+.line-bottom-name--title-6::after {
+    display: none;
+    @media(min-width:992px) { 
+        display: block;
+        position: absolute;
+        content: "";
+        height: 6px;
+        bottom: 3px;
+        height: 7px;
+        background-color: #fbdc4d;
+    }
+    @media(min-width:1200px ) {
+
+    }
+}
 .section-portfolio-links {
     display: none;
     @media(min-width: 768px) {

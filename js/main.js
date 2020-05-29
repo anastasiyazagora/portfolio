@@ -25,6 +25,70 @@ $(document).ready(function () {
             block: ""
         }
     })
+    // fake-placeholder
+    const formInputs = document.querySelectorAll('.form-field');
+    for (let item of formInputs) {
+        const inputPlaceholder = item.nextElementSibling;
 
-    
+        item.addEventListener('click', function () {
+            inputPlaceholder.classList.add('active');
+        });
+
+        item.addEventListener('blur', function(){
+            if(this.value == ''){
+                inputPlaceholder.classList.remove('active');
+            }
+        })
+    }
+    // form validate
+    $('#contact-form').validate({
+        rules:{
+            email:{
+                required: true,
+                email: true
+            },
+            tema:{
+                required: true
+            },
+            message:{
+                required: true
+            }
+        },
+        message:{
+            email:{
+                required: 'Введите Ваш email',
+                email: 'Email введен не корректно'
+            },
+            tema:{
+                required: 'Введите тему сообщения'
+            },
+            message:{
+                required: 'Введите текст сообщения'
+            }
+        },
+        submitHandler: function (form) {
+            ajaxFormSubmit();
+        }
+    });
+    function ajaxFormSubmit() {
+
+        let string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку.
+
+        //Формируем ajax запрос
+        $.ajax({
+            type: "POST", // Тип запроса - POST
+            url: "php/mail.php", // Куда отправляем запрос
+            data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+            // Функция если все прошло успешно
+            success: function (html) {
+                $("#contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+
+        // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+        return false;
+    }
+
 })
