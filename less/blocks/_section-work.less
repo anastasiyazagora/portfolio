@@ -8,9 +8,9 @@
         padding-bottom: 75px;
     }
     @media(min-width:1200px ) {
+        background-image: url(/img/section-work/bg-work.jpg);
         padding-top: 130px;
         padding-bottom: 130px;
-    
     }
 }
 .icon-work-block {
@@ -22,15 +22,6 @@
     align-items: center;
     border-radius: 28px;
     flex-shrink: 0;
-    &:hover {
-        box-shadow: 0 0 1px #fbdc4d, 0 0 40px #fbdc4d, 0 0 80px #fbdc4d;
-    }
-    @media(min-width:768px) {
-        
-    }
-    @media(min-width:1200px ) {
-    
-    }
 }
 .work-block__item:nth-child(2n+1) .icon-work-block {
     @media(min-width:768px) {
@@ -45,23 +36,22 @@
 .work-block__item:nth-child(2n)::before {
     left: -2px;
 }
-
 .work-block__item {
     display: flex;
     position: relative;
     padding-bottom: 25px;
     margin-bottom: 25px;
     min-height: 150px;
+    &:hover {
+        .icon-work-block {
+        box-shadow: 0 0 1px #fbdc4d, 0 0 40px #fbdc4d, 0 0 80px #fbdc4d;
+        }
+    }
     @media(min-width:768px) {
         max-width: 50%;
     }
-
-    @media(min-width:1200px ) {
-    
-    }
 }
 .work-block__item::before {
-   
     @media(min-width:768px) {
         position: absolute;
         content: "";
@@ -70,9 +60,6 @@
         top: 90px;
         left: 36px;
         background-color: #e1eef4; 
-    }
-    @media(min-width:1200px ) {
-    
     }
 }
 .work-block__item:last-child::before {
@@ -89,9 +76,6 @@
     display: none;
     @media(min-width:768px) {
         display: block;        
-    }
-    @media(min-width:1200px ) {
-
     }
 }
 
@@ -114,17 +98,11 @@
     @media(min-width:768px) {
         margin-left: auto;
     }
-    @media(min-width:1200px ) {
-    
-    }
 }
 .work-block__item:nth-child(2n+1) {
     @media(min-width:768px) {
         flex-direction: row-reverse;
         text-align: right;
-    }
-    @media(min-width:1200px ) {
-    
     }
 }
 .work-block__item:nth-child(2n+1)::before {
@@ -136,13 +114,11 @@
     margin: 0;
     font-size: 20px;
     font-weight: 800;
-   
     @media(min-width:768px) {
         font-size: 24px;
     }
     @media(min-width:1200px ) {
         font-size: 26px;
-
     }
 }
 
@@ -151,30 +127,17 @@
     height: 40px;
 }
 .text-work-block p {
-    
-    @media(min-width:768px) {
-        
-    }
     @media(min-width:1200px ) {
         padding: 5px 0 5px;
     }
 }
 .text-work-block {
     padding-left: 20px;
-    @media(min-width:768px) {
-        
-    }
-    @media(min-width:1200px ) {
-
-    }
 }
 .text-work-block-time {
     font-size: 14px;
     font-weight: bold;
     @media(min-width:768px) {
         font-size: 18px;
-    }
-    @media(min-width:1200px ) {
-        
     }
 }

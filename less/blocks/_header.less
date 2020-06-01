@@ -3,7 +3,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  
   background-image: url(../img/header/line-1.jpg);
   background-size: contain;
   background-position: 0 0;
@@ -396,7 +395,6 @@ header {
     transform: scale(1);
   }
   @media (min-width: 1200px) {
-    // margin-bottom: 82px;
     z-index: -1;
   }
 }
@@ -452,8 +450,6 @@ header {
 }
 .skills-list span {
   display: none;
-  @media (min-width: 768px) {
-  }
   @media (min-width: 1200px) {
     width: 17px;
     height: 0.8px;
@@ -471,11 +467,9 @@ header {
 }
 .skills-list__item {
   margin-bottom: 15px;
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 1200px) {
-    margin-bottom: 0;
-  }
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+    }
 }
 .skills-link a {
   display: inline-block;
@@ -493,7 +487,6 @@ header {
   }
 }
 .contacts-header {
-
   @media (min-width: 768px) {
     max-width: 292px;
     width: 49%;
@@ -506,12 +499,6 @@ header {
 .sotial-links-block__item img {
   height: 50px;
   width: 50px;
-  @media (min-width: 768px) {
-    
-  }
-  @media (min-width: 1200px) {
-    
-  }
 }
 .sotial-links-block__item {
   margin-right: 21px;
@@ -548,14 +535,12 @@ header {
   box-shadow: 0 0 10px 0 rgb(59, 89, 152) inset, 0 0 10px 4px rgb(59, 89, 152);
   color: rgb(59, 89, 152);
 }
- 
 .sotial-links-block {
   display: flex;
   margin-bottom: 15px;
  justify-content: start;
- z-index: 1;
+ z-index: -1;
   @media (min-width: 768px) {
-    
     margin-bottom: 29px;
     margin-right: 0;
   }
@@ -593,12 +578,8 @@ header {
 }
 .mobile-menu-contacts, .mobile-logo {
   display: block;
-  // color: #039be5;
-  @media(min-width: 768px) {
-    
-  }
-  @media(min-width:1200px ) {
-  display: none;
+    @media(min-width:1200px ) {
+    display: none;
   }
 }
 .mobile-logo {
