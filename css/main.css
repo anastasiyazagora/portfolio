@@ -108,7 +108,7 @@ button {
 }
 @media (min-width: 768px) {
   #page-nav {
-    right: 10px;
+    right: 6px;
     top: 15%;
     z-index: 9;
   }
