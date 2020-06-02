@@ -95,7 +95,9 @@ header {
 }
 .header-menu.active {
   transform: translateX(0%);
+  z-index: 10;
   @media (min-width: 768px) {
+    z-index: 10;
     padding-left: 20px;
     width: 325px;
   }
@@ -274,9 +276,23 @@ header {
   right: -75px;
   width: 474px;
   height: 410px;
-  background-image: linear-gradient(to top, #f4f8f9 0%, rgba(244, 248, 249, 0.507) 100%);
+  background-image: linear-gradient( 90deg, rgb(244,248,249) 0%, rgba(244,248,249,0) 100%);
+  opacity: 0.502;
   z-index: -1;
 }
+.BACK {
+  background-image: -moz-linear-gradient( 90deg, rgb(244,248,249) 0%, rgba(244,248,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(244,248,249) 0%, rgba(244,248,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(244,248,249) 0%, rgba(244,248,249,0) 100%);
+  opacity: 0.502;
+  position: absolute;
+  left: 1517px;
+  top: 425px;
+  width: 474px;
+  height: 410px;
+  z-index: 33;
+}
+
 .header-content-about-me {
   max-width: 560px;
   z-index: 5;
@@ -330,7 +346,7 @@ header {
     line-height: 1.5;
     font-size: 24px;
     letter-spacing: 1px;
-    margin-bottom: 46px;
+    margin-bottom: 29px;
   }
 }
 .wrapper-header-links {
@@ -388,7 +404,7 @@ header {
     transform: scale(1.2);
   }
   @media (min-width: 768px) {
-    margin-top: -31px;
+    margin-top: -126px;
     transform: scale(1);
   }
   @media (min-width: 1200px) {
@@ -405,7 +421,7 @@ header {
     margin-bottom: 10px;
   }
   @media (min-width: 1200px) {
-    padding-top: 70px;
+    padding-top: 55px;
     margin-top: -70px;
     justify-content: space-between;
     margin-bottom: 137px;

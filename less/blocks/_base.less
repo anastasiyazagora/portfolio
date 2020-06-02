@@ -89,11 +89,18 @@ button {
     }
 }
 #page-nav {
-    @media(min-width:1200px) {
     position: fixed;
+    right: 8px;
+    top: 33%;
+    z-index: 9;  
+    @media(min-width: 768px) {
+    right: 10px;
+    top: 15%;
+    z-index: 9;   
+    }
+    @media(min-width:1200px) {
     right: 10px;
     top: 60%;
-    z-index: 100;   
     }
 }
 #page-nav li {
