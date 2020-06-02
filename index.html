@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <ul id="page-nav">
+        <li class="active">
+            <a href="#header"></a>
+        </li>
+        <li>
+            <a href="#works"></a>
+        </li>
+        <li>
+            <a href="#howworks"></a>
+        </li>
+        <li>
+            <a href="#contacts"></a>
+        </li>
+    </ul>
     <div id="overlay"></div>
-<header>
+<header id="header">
     <div id="first-page" class="header-nav">
         <a href="index.html" class="header-logo">АЗ
         </a>
         <nav class="header-menu">
             <a href="#first-page" class="header-menu__item" >Главная</a>
             <a href="#works" class="header-menu__item" >Работы</a>
-            <a href="#contacts" class="header-menu__item" >Контакты</a>
+            <a href="#contacts" class="header-menu__item header-menu__item--contacts" >Контакты</a>
             <div class="mobile-menu-contacts">
                 <div class="mobile-logo">
                     <a href="index.html" class="header-logo">АЗ
@@ -104,16 +119,6 @@
                 </div> -->
                 <div id="portfolio-projects">
                     <div class="portfolio-projects-card-wrapper">
-                        <div class="portfolio-projects-card mix boots wp">
-                            <a class="card-link-button" target="blank" href="https://anastasiyazagora.github.io/forest/index.html">
-                                <img src="./img/section-portfolio/forest2.jpg" alt="">
-                                <div class="more-btn">Смотреть проект</div>
-                            </a>
-                            <div class="portfolio-card-desk">
-                                <a class="title-4" href="https://anastasiyazagora.github.io/forest/index.html" target="blank">Верстка "Форест тревел"</a>
-                                <p>Верстка многостраничного сайта.</p>
-                            </div>    
-                        </div>
                         <div class="portfolio-projects-card mix wp">
                             <a class="card-link-button" target="blank" href="https://anastasiyazagora.github.io/Unit/">
                                 <img src="./img/section-portfolio/unit.jpg" alt="">
@@ -123,6 +128,16 @@
                                 <a class="title-4" href="https://anastasiyazagora.github.io/Unit/" target="blank">Сайт проекта "Юнит"</a>
                                 <p>Верстка лендинга.</p>
                             </div>
+                        </div>
+                        <div class="portfolio-projects-card mix boots wp">
+                            <a class="card-link-button" target="blank" href="https://anastasiyazagora.github.io/forest/index.html">
+                                <img src="./img/section-portfolio/forest2.jpg" alt="">
+                                <div class="more-btn">Смотреть проект</div>
+                            </a>
+                            <div class="portfolio-card-desk">
+                                <a class="title-4" href="https://anastasiyazagora.github.io/forest/index.html" target="blank">Верстка "Форест тревел"</a>
+                                <p>Верстка многостраничного сайта.</p>
+                            </div>    
                         </div>
                         <div class="portfolio-projects-card mix frontend">
                             <a class="card-link-button" href="index.html" target="blank">
@@ -134,14 +149,34 @@
                                 <p>Верстка многостраничного сайта.</p>
                             </div>
                         </div>
+                        <div class="portfolio-projects-card mix frontend">
+                            <a class="card-link-button" href="https://anastasiyazagora.github.io/moto/" target="blank">
+                                <img src="./img/section-portfolio/moto_1.jpg" alt="">
+                                <div class="more-btn">Смотреть проект</div>
+                            </a>
+                            <div class="portfolio-card-desk">
+                                <a class="title-4" href="https://anastasiyazagora.github.io/moto/" target="blank">Карточка проекта "Мир Авто"</a>
+                                <p>Верстка карточки товара.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-projects-card mix frontend">
+                            <a class="card-link-button" href="https://anastasiyazagora.github.io/book/" target="blank">
+                                <img src="./img/section-portfolio/book_1.jpg" alt="">
+                                <div class="more-btn">Смотреть проект</div>
+                            </a>
+                            <div class="portfolio-card-desk">
+                                <a class="title-4" href="https://anastasiyazagora.github.io/book/" target="blank">Карточка проекта "Книги"</a>
+                                <p>Верстка карточки товара.</p>
+                            </div>
+                        </div>
                     </div>                 
                 </div>  
             </div>
         <!-- //Container -->    
         </div>
-        <div class="section-work">
+        <div id="howworks" class="section-work">
             <div class="container">
-                <h2 class="title-2 title-2-work"><span class="line-bottom-name">Как я работаю</span></h2>
+                <h2 class="title-2 title-2-work"><span class="line-bottom-name line-bottom-name-title2">Как я работаю</span></h2>
                 <div class="section-work-blocks">
                     <div class="work-block__item">
                         <div class="icon-work-block">
@@ -198,18 +233,18 @@
         </div>
         <div id="contacts" class="section-contacts">
             <div class="container">
-                <h2 class="title-2 title-2-contacts"><span class="line-bottom-name">Контакты</span></h2>
+                <h2 class="title-2 title-2-contacts"><span class="line-bottom-name line-bottom-name-title2">Контакты</span></h2>
                 <div class="section-contacts-content">
                     <div class="contacts-text-wrapper">
                         <p>Если вы ищите специалиста по верстке&nbsp;сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.</p>
                         <ul class="contacts-section-list">
                             <li class="contacts-section-list__item">
                                 <span class="contacts-list-item-name">Email</span>
-                                <span class="contacts-list-item-link">zagoraai33@gmail.com</span>
+                                <a href="#" class="contacts-list-item-link">zagoraai33@gmail.com</a>
                             </li>
                             <li class="contacts-section-list__item">
                                 <span class="contacts-list-item-name">Skype</span>
-                                <span class="contacts-list-item-link">zagoraai33</span>
+                                <a href="#" class="contacts-list-item-link">zagoraai33</a>
                             </li>
                             <li class="contacts-section-list__item">
                                 <span class="contacts-list-item-name">Телефон</span>
@@ -265,6 +300,7 @@
 <script src="libs/jquery/jquery-3.0.0.min.js"></script>
 <script src="libs/jquery.validate/jquery.validate.js"></script>
 <script src="libs/mixitup3/mixitup.min.js"></script>
+<script src="libs/nav.js/nav.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

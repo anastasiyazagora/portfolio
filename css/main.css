@@ -100,6 +100,34 @@ button {
     max-width: 1140px;
   }
 }
+@media (min-width: 1200px) {
+  #page-nav {
+    position: fixed;
+    right: 10px;
+    top: 60%;
+    z-index: 100;
+  }
+}
+#page-nav li {
+  width: 15px;
+  height: 15px;
+  background-color: #fbdc4d;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  margin-bottom: 15px;
+  -webkit-transition: .3px;
+  -o-transition: .3px;
+  -moz-transition: .3px;
+  transition: .3px;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: #ea736d;
+}
 header {
   max-width: 1600px;
   margin-left: auto;
@@ -305,11 +333,8 @@ header {
     margin-bottom: 0;
     border: none;
   }
-  .header-menu__item:last-child {
-    margin-right: 0;
-  }
 }
-.header-menu__item:last-child {
+.header-menu__item--contacts {
   margin-right: 0;
 }
 .header-menu__item::after {
@@ -847,12 +872,16 @@ header {
 @media (min-width: 1200px) {
   .sotial-links-block__item {
     margin-right: 30px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
   }
   .sotial-links-block__item:last-child {
     margin-right: 0px;
   }
 }
-.sotial-links__git img:hover {
+.sotial-links__git:hover {
   -webkit-border-radius: 35px;
      -moz-border-radius: 35px;
           border-radius: 35px;
@@ -861,7 +890,7 @@ header {
           box-shadow: 0 0 10px 0 #0c080a inset, 0 0 10px 4px #2e2d2e;
   color: #313031;
 }
-.sotial-links__telegram img:hover {
+.sotial-links__telegram:hover {
   -webkit-border-radius: 35px;
      -moz-border-radius: 35px;
           border-radius: 35px;
@@ -870,7 +899,7 @@ header {
           box-shadow: 0 0 10px 0 #039be5 inset, 0 0 10px 4px #039be5;
   color: #039be5;
 }
-.sotial-links__vk img:hover {
+.sotial-links__vk:hover {
   -webkit-border-radius: 35px;
      -moz-border-radius: 35px;
           border-radius: 35px;
@@ -879,7 +908,7 @@ header {
           box-shadow: 0 0 10px 0 #4d76a1 inset, 0 0 10px 4px #4d76a1;
   color: #4d76a1;
 }
-.sotial-links__facebook img:hover {
+.sotial-links__facebook:hover {
   -webkit-border-radius: 35px;
      -moz-border-radius: 35px;
           border-radius: 35px;
@@ -996,8 +1025,14 @@ header {
   }
 }
 .line-bottom-name-title2::after {
-  height: 10px;
-  bottom: 11px;
+  height: 7px;
+  bottom: 8px;
+}
+@media (min-width: 768px) {
+  .line-bottom-name-title2::after {
+    height: 10px;
+    bottom: 14px;
+  }
 }
 @media (min-width: 768px) {
   .line-bottom-name-title2::after {

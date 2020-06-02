@@ -140,12 +140,9 @@ header {
     margin-right: 75px;
     margin-bottom: 0;
     border: none;
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
-.header-menu__item:last-child {
+.header-menu__item--contacts {
   margin-right: 0;
 }
 .header-menu__item::after {
@@ -510,27 +507,29 @@ header {
   }
   @media (min-width: 1200px) {
     margin-right: 30px;
+    transition: .2s;
     &:last-child {
       margin-right: 0px;
     }
   }
 }
-.sotial-links__git img:hover {
+.sotial-links__git:hover {
   border-radius: 35px;
   box-shadow: 0 0 10px 0 #0c080a inset, 0 0 10px 4px #2e2d2e;
   color: #313031;
+  
 }
-.sotial-links__telegram img:hover {
+.sotial-links__telegram:hover {
   border-radius: 35px;
   box-shadow: 0 0 10px 0 rgb(3, 155, 229) inset, 0 0 10px 4px rgb(3, 155, 229);
   color: #039be5;
 }
-.sotial-links__vk img:hover {
+.sotial-links__vk:hover {
   border-radius: 35px;
   box-shadow: 0 0 10px 0 rgb(77, 118, 161) inset, 0 0 10px 4px rgb(77, 118, 161);
   color: #4d76a1;
 }
-.sotial-links__facebook img:hover {
+.sotial-links__facebook:hover {
   border-radius: 35px;
   box-shadow: 0 0 10px 0 rgb(59, 89, 152) inset, 0 0 10px 4px rgb(59, 89, 152);
   color: rgb(59, 89, 152);
