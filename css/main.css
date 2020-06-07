@@ -669,7 +669,7 @@ header {
 .header-links-introduce {
   display: inline-block;
   z-index: 2;
-  padding: 16px 44px;
+  padding: 16px 35px;
   margin-right: 20px;
   -webkit-border-radius: 30px;
      -moz-border-radius: 30px;
@@ -1382,7 +1382,7 @@ header {
 }
 @media (min-width: 1200px) {
   .section-work {
-    background-image: url(/img/section-work/bg-work.jpg);
+    background-image: url(../img/section-work/bg-work.jpg);
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -1610,7 +1610,7 @@ header {
 }
 @media (min-width: 1200px) {
   .section-contacts {
-    background-image: url(/img/contacts/bg1-contacts.jpg);
+    background-image: url(../img/contacts/bg1-contacts.jpg);
     padding-top: 140px;
     padding-bottom: 150px;
   }
@@ -1782,7 +1782,7 @@ header {
     display: block;
     width: 453px;
     height: 308px;
-    background-image: url(/img/contacts/bg-contacts.png);
+    background-image: url(../img/contacts/bg-contacts.png);
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
