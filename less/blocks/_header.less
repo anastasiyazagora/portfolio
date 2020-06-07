@@ -30,6 +30,13 @@ header {
   @media (min-width: 768px) {
     max-width: 685px;
   }
+  @media (min-width: 900px) {
+    max-width: 750px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
   @media (min-width: 1200px) {
     max-width: 1400px;
     margin-bottom: 160px;
@@ -179,7 +186,6 @@ header {
   height: 30px;
   width: 30px;
   margin-right: 18px;
-  transition: 0.5s;
 }
 .header-social-vk svg {
   margin-right: 0;
@@ -262,14 +268,16 @@ header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 58px;
-  border-radius: 30%;
+  border-radius: 21% 79% 72% 28% / 49% 46% 54% 51%;
   overflow: hidden;
   @media (min-width: 768px) {
     align-items: flex-start;
     margin-bottom: 0;
+  
   }
   @media (min-width: 1200px) {
     z-index: 2;
+    
   }
 }
 .header-content-img-wrapper img {
@@ -402,7 +410,7 @@ header {
   @media (min-width: 576px) {
     transform: scale(1.2);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1199px) {
     margin-top: -126px;
     transform: scale(1);
   }
@@ -508,12 +516,12 @@ header {
     width: 49%;
   }
 }
-.sotial-links-block__item img {
+.sotial-links-block__item {
+  display: block;
   height: 50px;
   width: 50px;
-}
-.sotial-links-block__item {
   margin-right: 21px;
+  transition: 0.5s;
   &:last-child {
     margin-right: 0px;
   }
@@ -522,15 +530,16 @@ header {
   }
   @media (min-width: 1200px) {
     margin-right: 30px;
-    transition: .5s;
+  
     &:last-child {
       margin-right: 0px;
     }
-    :hover {
-      transform: scale(1.2);
+    &:hover {
+      transform: scale(1.08);
     }
   }
 }
+
 
 .sotial-links-block {
   display: flex;

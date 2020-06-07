@@ -16,6 +16,7 @@
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 40px;
+    text-align: center;
     @media(min-width: 768px) {
         font-size: 52px;
         margin-bottom: 40px;
@@ -107,16 +108,19 @@
     }
 }
 .portfolio-projects-card {
-    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     padding-bottom: 40px;
     max-width: 340px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
+    &:hover {
+        box-shadow: 0 0 20px rgb(251, 220, 77, 0.14);
+    }
     @media(min-width:768px) {
         padding-bottom: 36px;
-    
     }
     @media(min-width:1200px ) {
-        
         padding-bottom: 36px;
         max-width: 555px;
     }
