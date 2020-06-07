@@ -544,9 +544,9 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 58px;
-  -webkit-border-radius: 21% 79% 72% 0.57142857% 46% 54% 51%;
-     -moz-border-radius: 21% 79% 72% 0.57142857% 46% 54% 51%;
-          border-radius: 21% 79% 72% 0.57142857% 46% 54% 51%;
+  -webkit-border-radius: 30%;
+     -moz-border-radius: 30%;
+          border-radius: 30%;
   overflow: hidden;
 }
 @media (min-width: 768px) {
