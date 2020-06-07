@@ -31,6 +31,12 @@ $(document).ready(function () {
         overlay.classList.remove('active');
         bodyEl.classList.remove('active');
     })
+    mobMenu.addEventListener('click', function(){
+        mobMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
+        bodyEl.classList.remove('active');
+    })
 
     let containerEl = document.querySelector('#portfolio-projects');
     let mixer = mixitup(containerEl, {
