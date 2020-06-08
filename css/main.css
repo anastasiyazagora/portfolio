@@ -409,6 +409,10 @@ header {
   height: 30px;
   width: 30px;
   margin-right: 18px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .header-social-vk svg {
   margin-right: 0;
@@ -822,7 +826,7 @@ header {
 }
 @media (min-width: 1200px) {
   .skills {
-    max-width: 610px;
+    max-width: 710px;
   }
 }
 .skills-list {
@@ -1153,18 +1157,22 @@ header {
        -moz-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-       -moz-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: space-evecenly;
+    -webkit-justify-content: space-evecenly;
+       -moz-box-pack: space-evecenly;
+        -ms-flex-pack: space-evecenly;
+            justify-content: space-evecenly;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-projects-card-wrapper {
+    max-width: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1750,8 +1758,14 @@ header {
     font-size: 20px;
   }
 }
+.contacts-list-item-link:hover {
+  color: #056393;
+}
 .contacts-section-list__item--color {
   color: #96969d;
+}
+.contacts-section-list__item--color:hover {
+  color: #06090a;
 }
 .contacts-section-list {
   display: -webkit-box;

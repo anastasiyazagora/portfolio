@@ -96,12 +96,17 @@
 .portfolio-projects-card-wrapper {
     display: flex;
     flex-direction: column;
+    
     @media(min-width: 768px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-evecenly;
         flex-wrap: wrap;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media(min-width:1200px ) {
+        max-width: none;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
